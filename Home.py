@@ -26,16 +26,17 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
         
     
+#Animation
 def load_lottieurl(url):
     r = requests.get(url)
     if r.status_code !=200:
         return None
-    return r.json()    
-
+    return r.json()  
 
 
 #Load assets
 lottie_coding = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_av0ub7mb.json")
+
 
 
 #Header section
@@ -66,7 +67,8 @@ with st.container():
 
         
 
-
+    with np.right_shift:
+                st_lottie(lottie_coding, height=300, key="coding")
 
 
 #About the different pages.
@@ -78,41 +80,24 @@ with st.container():
     st.write("##")
     st.write(
             """
-           :black_circle: Home: The first page that will be open for users. (you are seeing it now!)""")
+           :black_circle: Home: The first page that will be open for users. (you are seeing it now!)
 
-    st.write("##")
-    st.write(
-            """
-           :black_circle: Dataset: The second page where users can see all the dataset for the application.""")
 
-    st.write("##")
-    st.write(
-            """
-           :black_circle: Application: The third page where users can find the Marvel Heroes Face Recognition App.""")
-           
-    st.write("##")
-    st.write(
-            """
-           :black_circle: Training: The fourth page where users can find useful videos regarding Image Annotation.""")
+           :black_circle: Dataset: The second page where users can see all the dataset for the application.
 
-    st.write("##")
-    st.write(
-            """
-           :black_circle: Contact: The last page where users can communicate and send me emails!""")
-            
 
-    st.write("##")
+           :black_circle: Application: The third page where users can find the Marvel Heroes Face Recognition App.
+
+
+           :black_circle: Training: The fourth page where users can find useful videos regarding Image Annotation.
+
+
+           :black_circle: Contact: The last page where users can communicate and send me emails!
+            """)
+
     st.write("##")
     st.write(
             """
             You can find these 5 pages at the left side of the window.
             """)
-
-
-        
-
-
-
-
-
 
