@@ -79,12 +79,17 @@ with st.container():
     st.write(
             """
            :black_circle: Home: The first page that will be open for users. (you are seeing it now!)
+           
            :black_circle: Dataset: The second page where users can see all the dataset for the application.
+           
            :black_circle: Application: The third page where users can find the Marvel Heroes Face Recognition App.
+           
            :black_circle: Training: The fourth page where users can find useful videos regarding Image Annotation.
+           
            :black_circle: Contact: The last page where users can communicate and send me emails!
             """)
 
+    st.write("##")
     st.write("##")
     st.write(
             """
