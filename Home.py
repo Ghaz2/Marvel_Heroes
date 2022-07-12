@@ -78,16 +78,28 @@ with st.container():
     st.write("##")
     st.write(
             """
-           :black_circle: Home: The first page that will be open for users. (you are seeing it now!)
+           :black_circle: Home: The first page that will be open for users. (you are seeing it now!)""")
+
+    st.write("##")
+    st.write(
+            """
+           :black_circle: Dataset: The second page where users can see all the dataset for the application.""")
+
+    st.write("##")
+    st.write(
+            """
+           :black_circle: Application: The third page where users can find the Marvel Heroes Face Recognition App.""")
            
-           :black_circle: Dataset: The second page where users can see all the dataset for the application.
-           
-           :black_circle: Application: The third page where users can find the Marvel Heroes Face Recognition App.
-           
-           :black_circle: Training: The fourth page where users can find useful videos regarding Image Annotation.
-           
-           :black_circle: Contact: The last page where users can communicate and send me emails!
-            """)
+    st.write("##")
+    st.write(
+            """
+           :black_circle: Training: The fourth page where users can find useful videos regarding Image Annotation.""")
+
+    st.write("##")
+    st.write(
+            """
+           :black_circle: Contact: The last page where users can communicate and send me emails!""")
+            
 
     st.write("##")
     st.write("##")
@@ -95,7 +107,6 @@ with st.container():
             """
             You can find these 5 pages at the left side of the window.
             """)
-
 
 
         
