@@ -1,7 +1,10 @@
+import cv2
+import face_recognition
 from PIL import Image, ImageDraw
 import requests
 import streamlit as st
-
+from streamlit_lottie import st_lottie
+from streamlit_option_menu import option_menu
 import numpy as np
 
 
