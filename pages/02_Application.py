@@ -13,7 +13,7 @@ st.set_page_config(page_title="Marvel Heroes Face Recognition", page_icon=":spar
 
 img =Image.open("hhh.jpg")
 st.sidebar.image(img)
-st.write("This is the selected photo.")
+
 
 
 #Animation
@@ -44,10 +44,9 @@ with st.container():
             
             
             Each user can upload an image and our app will recognize the Marvel Hero or will show Unkown tag, also our app will detect the face and will draw a bounding box around it!
-
-
-
             
+
+            After each step it takes almost one minute for the app to process, so please be patient!
             
             """)
 
