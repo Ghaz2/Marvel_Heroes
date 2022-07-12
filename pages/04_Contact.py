@@ -1,7 +1,11 @@
+import cv2
+import face_recognition
 from PIL import Image, ImageDraw
 from pandas import concat
 import requests
 import streamlit as st
+from streamlit_lottie import st_lottie
+from streamlit_option_menu import option_menu
 import numpy as np
 
 
@@ -37,10 +41,6 @@ with st.container():
     st.header("Get In Touch With Me! :email:")
     st.write("---")
     st.write("##")
-
-
-
-    
 
 
 
@@ -80,3 +80,10 @@ def load_lottieurl(url):
     if r.status_code !=200:
         return None
     return r.json()  
+
+
+#Load assets
+lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_kfcwv9hc.json")
+
+with right_column:
+                st_lottie(lottie_coding, height=200, key="coding")
