@@ -14,7 +14,7 @@ st.set_page_config(page_title="Marvel Heroes Face Recognition", page_icon=":spar
 
 img =Image.open("888.jpg")
 st.sidebar.image(img)
-st.write("This is the selected photo.")
+
 
 
 #Removing Made with Streamlit, Hamburger Icon Menu & Streamlit Header
@@ -23,7 +23,6 @@ hide_st_style = """
                 #MainMenu {visibility: hidden;}
                 footer {visibility: hidden;}
                 header {visibility: hidden;}
-
                 </style>
                 """
 st.markdown(hide_st_style, unsafe_allow_html=True)      
@@ -62,9 +61,7 @@ with st.container():
         st.write(
         """
         If your answer is yes, Training section is the best option for you! :heart:
-
         I have recorded some training regarding Image Annotation which you can watch them here.
-
         """)
 
     with np.right_shift:
@@ -85,13 +82,9 @@ with st.container():
         st.write(
             """
             In this video we will learn:
-
            :ballot_box_with_check: The definition of image annotation.
-
            :ballot_box_with_check:  Different types of annotation.
-
            :ballot_box_with_check: The use of annotation.
-
              
             """)
 
@@ -108,7 +101,6 @@ with st.container():
         st.write(
             """
             In this video we will learn:
-
             :ballot_box_with_check: The introduction to Image Collection
             
             """)
@@ -129,7 +121,6 @@ with st.container():
         st.write(
             """
             In this video we will learn:
-
             :ballot_box_with_check: How to collect images!
             
             """)
@@ -154,7 +145,6 @@ with st.container():
         st.write(
             """
             In this video we will learn:
-
            :ballot_box_with_check: The defenition of image annotation with Tagging method
             
             """)
@@ -188,7 +178,6 @@ with st.container():
         st.write(
             """
             In this video we will learn:
-
            :ballot_box_with_check: How to open Supervisely!
             
             """)
@@ -212,7 +201,6 @@ with st.container():
         st.write(
             """
             In this video we will learn:
-
            :ballot_box_with_check: The defenition of image annotation with bounding box method
             
             """)
@@ -229,7 +217,6 @@ with st.container():
         st.write(
             """
             In this video we will learn:
-
             :ballot_box_with_check: How to annotate images with bounding box method.
             
             """)
