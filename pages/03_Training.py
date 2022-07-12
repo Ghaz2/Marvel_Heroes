@@ -172,3 +172,66 @@ with st.container():
         st.write(
             """
             In this video we will learn:
+            :ballot_box_with_check: what Supervisely is!
+            
+            """)
+vidoe2 = open("day2video2.mp4" , "rb")
+st.video(vidoe2)
+
+st.write("##")
+#Video 3
+with st.container():     
+    np.left_shift, np.right_shift = st.columns(2)
+    with np.left_shift:
+        st.write("##")
+        st.subheader(":thought_balloon: Vidoe 3")
+        st.write(
+            """
+            In this video we will learn:
+
+           :ballot_box_with_check: How to open Supervisely!
+            
+            """)
+vidoe3 = open("day2video3.mp4" , "rb")
+st.video(vidoe3)
+
+
+
+
+st.write("##")
+#Day 3
+#Video 1
+with st.container():     
+    st.write("---")
+    np.left_shift, np.right_shift = st.columns(2)
+    with np.left_shift:
+        st.write("##")
+        st.header("Day 3")
+        st.write("##")
+        st.subheader(":thought_balloon: Video 1")
+        st.write(
+            """
+            In this video we will learn:
+
+           :ballot_box_with_check: The defenition of image annotation with bounding box method
+            
+            """)
+vidoe1 = open("4.mp4" , "rb")
+st.video(vidoe1)
+
+st.write("##")
+#Video 2
+with st.container():     
+    np.left_shift, np.right_shift = st.columns(2)
+    with np.left_shift:
+        st.write("##")
+        st.subheader(":thought_balloon: Vidoe 2")
+        st.write(
+            """
+            In this video we will learn:
+
+            :ballot_box_with_check: How to annotate images with bounding box method.
+            
+            """)
+vidoe2 = open("Day3video2.mp4" , "rb")
+st.video(vidoe2)
