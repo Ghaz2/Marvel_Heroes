@@ -22,7 +22,6 @@ hide_st_style = """
                 #MainMenu {visibility: hidden;}
                 footer {visibility: hidden;}
                 header {visibility: hidden;}
-
                 </style>
                 """
 st.markdown(hide_st_style, unsafe_allow_html=True)      
@@ -57,11 +56,8 @@ with st.container():
             """
             
             Users can find the dataset bellow.
-
-
-
             Each dataset contains:
-
+            
             :black_circle:  Name
           
             :black_circle:  Image
@@ -799,4 +795,3 @@ with st.container():
  Born in London, England, Hayley Elizabeth Atwell has dual citizenship of the United Kingdom and the United States. An only child, Hayley was named after actress Hayley Mills. Her parents, Alison (Cain) and Grant Atwell, both motivational speakers, met at a London workshop of Dale Carnegie's self-help bible "How to Win Friends
  """
 )
-
