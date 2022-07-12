@@ -1,7 +1,10 @@
+import cv2
+import face_recognition
 from PIL import Image, ImageDraw
 import requests
 import streamlit as st
-
+from streamlit_lottie import st_lottie
+from streamlit_option_menu import option_menu
 import numpy as np
 
 
@@ -19,6 +22,7 @@ hide_st_style = """
                 #MainMenu {visibility: hidden;}
                 footer {visibility: hidden;}
                 header {visibility: hidden;}
+
                 </style>
                 """
 st.markdown(hide_st_style, unsafe_allow_html=True)      
@@ -32,7 +36,8 @@ def load_lottieurl(url):
     return r.json()  
 
 
-
+#Load assets
+lottie_coding = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_n5icqxkw.json")
 
 
 #Header section
@@ -52,7 +57,11 @@ with st.container():
             """
             
             Users can find the dataset bellow.
+
+
+
             Each dataset contains:
+
             :black_circle:  Name
           
             :black_circle:  Image
@@ -62,10 +71,13 @@ with st.container():
             """)
 
 
+        with np.right_shift:
+                st_lottie(lottie_coding, height=300, key="coding")
+
+
+
+
        
-
-
-
 
 #Cast of Marvel Heroes
 Robert_DowneyJr = Image.open("images/Robert_DowneyJr.jpg")
